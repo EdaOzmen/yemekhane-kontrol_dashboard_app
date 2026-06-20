@@ -1,16 +1,57 @@
-# React + Vite
+# Yemekhane Kontrol Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, okul yemekhane haftalık menülerini yönetmek için hazırlanmış küçük bir React uygulamasıdır. Vite ile geliştirme deneyimi ve hızlı üretim yapısı kullanır. Aşağıda proje hakkında kısa bilgiler ve nasıl çalıştırılacağı yer alır.
 
-Currently, two official plugins are available:
+Özellikler
+- Haftalık yemek kayıtları oluşturma, düzenleme ve silme
+- Haftalara göre listeleme ve hafta tarih aralığını gösterme
+- Yerelde kalıcı saklama için `localStorage` kullanımı (kullanıcı verileri tarayıcıda saklanır)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Teknolojiler
+- React (JSX)
+- Vite (dev sunucusu ve build)
+- Bootstrap 5 (stil)
+- ESLint (kod kalitesi)
+- Netlify (barındırma / deploy)
 
-## React Compiler
+Yerel Kurulum
+1. Depoyu klonla veya proje klasörüne git:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```powershell
+cd "c:\Users\edaoz\OneDrive\Masaüstü\SoftwarePersona\Javascript\yemekhane_kontrol_dashborad_app"
+```
 
-## Expanding the ESLint configuration
+2. Bağımlılıkları yükle:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```powershell
+npm install
+```
+
+3. Geliştirme sunucusunu başlat:
+
+```powershell
+npm run dev
+```
+
+Tarayıcıda `http://localhost:5173/` adresine gidin.
+
+Üretim (build)
+
+```powershell
+npm run build
+```
+
+Çıktı `dist/` klasöründe oluşur; bu klasörü Netlify gibi bir servisle dağıtabilirsiniz.
+
+Netlify Deploy Notları
+- Netlify yapılandırması `netlify.toml` dosyasında bulunur. Değişiklik yaptıktan sonra GitHub'a pushlarsanız Netlify otomatik olarak yeniden dağıtım yapacaktır.
+- Kullanıcı verileri şu anda `localStorage`'da saklanır; birden çok kullanıcı veya paylaşılan kalıcılık isterseniz Firebase/Supabase/Airtable gibi bir backend bağlamanızı öneririm.
+
+Katkıda Bulunma
+- Değişiklik yapıp göndermek için bir branch açın, değişikliklerinizi commit edip pushlayın ve pull request oluşturun.
+
+Sorun bildirimi
+- Projeyi çalıştırırken veya deploy ederken hata alırsanız, terminal çıktısını ve Netlify build loglarını paylaşın; yardımcı olurum.
+
+----
+Güncel kod ve çalışma talimatları için `src/` altındaki dosyalara bakabilirsiniz.
