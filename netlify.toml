@@ -4,10 +4,6 @@
 
 [context.production.environment]
   NODE_ENV = "production"
-
-[[plugins]]
-  # optional: add Netlify plugins here
-
 # Redirect all requests to index.html for SPA routing
 [[redirects]]
   from = "/*"
