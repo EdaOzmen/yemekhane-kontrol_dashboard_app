@@ -2,9 +2,6 @@
   publish = "dist"
   command = "npm run build"
 
-[context.production.environment]
-  NODE_ENV = "production"
-
 # Redirect all requests to index.html for SPA routing
 [[redirects]]
   from = "/*"
