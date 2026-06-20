@@ -47,11 +47,3 @@ Netlify Deploy Notları
 - Netlify yapılandırması `netlify.toml` dosyasında bulunur. Değişiklik yaptıktan sonra GitHub'a pushlarsanız Netlify otomatik olarak yeniden dağıtım yapacaktır.
 - Kullanıcı verileri şu anda `localStorage`'da saklanır; birden çok kullanıcı veya paylaşılan kalıcılık isterseniz Firebase/Supabase/Airtable gibi bir backend bağlamanızı öneririm.
 
-Katkıda Bulunma
-- Değişiklik yapıp göndermek için bir branch açın, değişikliklerinizi commit edip pushlayın ve pull request oluşturun.
-
-Sorun bildirimi
-- Projeyi çalıştırırken veya deploy ederken hata alırsanız, terminal çıktısını ve Netlify build loglarını paylaşın; yardımcı olurum.
-
-----
-Güncel kod ve çalışma talimatları için `src/` altındaki dosyalara bakabilirsiniz.
